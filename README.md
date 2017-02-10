@@ -13,7 +13,7 @@
   
 ## To-do
 - Support for [Answers.com], [Wolfram Alpha], [Wikipedia] and other services
-- Using of another bots in network (your home Robbie instance can ask for closing of doors in your company for example)
+- Using of another bots in network (Your home instance of Robbie can ask for closing of doors in your company for example. There can be closing IoT device for door closing or just another Robbie server managing this IoT device himself.)
 - Voice recognization
 - Support for sensors and devices using [Intel Edison]
 - Support for sensors and devices using protocols

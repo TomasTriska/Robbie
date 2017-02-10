@@ -1,6 +1,6 @@
 # Robbie
 
-> Robbie is AIML home based [Internet of Things] (IoT) assistant in [Python]. Robbie needs no screens. Just type or say commands like to normal people.
+> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [AIML]. Robbie needs no screens. Just type or say commands like to normal people. Robbie do command, tell you something or do another action depending on his installed modules for sensors and devices. Developer can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships in future maybe :)
 
 ## Features
   - Open Source

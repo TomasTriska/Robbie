@@ -8,7 +8,7 @@
   - Robbie understand your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
   - Text to speech
   - Running on all [UNIX] devices include [MacOS]
-  - Primary used for [Intel Edison], but can run on another home server
+  - Primary used for [Intel Edison], but can run on another device - small or big one
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)
   
 ## To-do

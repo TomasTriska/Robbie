@@ -1,12 +1,12 @@
 # Robbie
 
-> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people. Robbie do command, tell you something or do another action depending on his installed modules for sensors and devices. Developer can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
+> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people. Robbie do command, tell you something or do another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
 
 ## Features
   - Open Source
   - Based on [Alicebot AIML 2.0]
   - Robbie understand your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
-  - Text to speed
+  - Text to speech
   - Running on all [UNIX] devices include [MacOS]
   - Primary used for [Intel Edison], but can run on another home server
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)

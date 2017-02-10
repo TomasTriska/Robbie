@@ -2,6 +2,9 @@
 
 > Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people. Robbie do command, tell you something or do another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
 
+## Here is Amazon Echo and Google Home where are differencies compare to them?
+So. It's simple. Amazon Echo and Google Home are closed systems with own harware and software policies. Robbie is framework. You can build own UNIX like device with own sensors and parts (for example speaker and microphone) and use Robbies code. You can create own modules for devices compatibility and share this modules for free, do edits in Robbie's code or create own forks and versions. All without policies and bureaucracy.
+
 ## Features
   - Open Source
   - Based on [Alicebot AIML 2.0]

@@ -30,8 +30,24 @@
 - [pyyaml]
 - [python-dateutil]
 - [requests]
+- [pydub]
 
 ## Installation
+
+### Linux
+- Install [Python 3] first
+and then:
+```sh
+$ sudo apt-get install python3-pip
+$ pip3 install pyaml
+$ pip3 install python-dateutil
+$ pip3 install requests
+$ pip3 install pydub
+$ apt-get install libav-tools libavcodec-extra-53
+or
+$ apt-get install ffmpeg libavcodec-extra-53
+```
+
 ### MacOS
 - Install [Python 3] first
 and then:
@@ -39,6 +55,11 @@ and then:
 $ pip3 install pyaml
 $ pip3 install python-dateutil
 $ pip3 install requests
+$ pip3 install pydub
+$ xcode-select --install
+$ brew install libav --with-libvorbis --with-sdl --with-theora
+or
+$ brew install ffmpeg --with-libvorbis --with-ffplay --with-theora
 ```
 
 ## Running
@@ -77,3 +98,4 @@ Robbie is build upon [program-y] AIML project and [GNU LGPL v3.0] license is use
    [GNU LGPL v3.0]: <https://www.gnu.org/licenses/lgpl-3.0.en.html>
    [Alicebot AIML 2.0]: <https://docs.google.com/document/d/1wNT25hJRyupcG51aO89UcQEiG-HkXRXusukADpFnDs4/pub>
    [Answers.com]: <http://www.answers.com>
+   [pydub]: <http://pydub.com>

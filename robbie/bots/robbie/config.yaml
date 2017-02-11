@@ -1,7 +1,7 @@
 
 brain:
 
-    supress_warnings: true
+    supress_warnings: false
 
     allow_system_aiml: true
     allow_learn_aiml: true
@@ -33,12 +33,16 @@ brain:
         postprocessors: $BOT_ROOT/config/postprocessors.conf
 
     services:
+        REST:
+            path: programy.utils.services.rest.GenericRESTService
         Pannous:
             path: programy.utils.services.pannous.PannousService
             login: test-user
         Pandora:
             path: programy.utils.services.pandora.PandoraService
             botid: f5d922d97e345aa1
+        Wikipedia:
+            path: programy.utils.services.wikipediaservice.WikipediaService
 
 bot:
     initial_question: Hi, how can I help you today?

@@ -43,6 +43,7 @@ $ pip3 install pyaml
 $ pip3 install python-dateutil
 $ pip3 install requests
 $ pip3 install pydub
+$ pip3 install wikipedia
 $ apt-get install libav-tools libavcodec-extra-53
 or
 $ apt-get install ffmpeg libavcodec-extra-53
@@ -56,6 +57,7 @@ $ pip3 install pyaml
 $ pip3 install python-dateutil
 $ pip3 install requests
 $ pip3 install pydub
+$ pip3 install wikipedia
 $ xcode-select --install
 $ brew install libav --with-libvorbis --with-sdl --with-theora
 or

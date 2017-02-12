@@ -15,7 +15,7 @@
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)
   
 ## Videos
-First look - https://www.youtube.com/watch?v=iqWow03RaaM
+[First look]
   
 ## To-do
 - Support for [Answers.com], [Wolfram Alpha], [Wikipedia] and other services
@@ -23,10 +23,12 @@ First look - https://www.youtube.com/watch?v=iqWow03RaaM
 - Voice recognization
 - Support for sensors and devices using [Intel Edison]
 - Support for sensors and devices using protocols
-- Web console support
+- Web Admin based on Python's Flask with configurable IP address (public IP can be set), login screen, graphs, console and online modules + wysiwig AIML editor. You can manage and program Robbie using web admin only
 - Libraries for main programming languages (one can use communicate with Robbie using mobile phone microphone and text input for example + Robbie can show informations on display and use mobile phone speaker)
-- [Python] GUI for desktop platforms using libraries
+- [Python] GUI for desktop platforms using libraries and nice design
 - User profiles with users swithching ("Hello, here is Thomas. Can you do some notes for me?", "Hi Thomas, what do you want to note?")
+
+> More info about features is in GitHub's issues list.
 
 ## Dependencies
 - [Python 3]
@@ -34,6 +36,11 @@ First look - https://www.youtube.com/watch?v=iqWow03RaaM
 - [python-dateutil]
 - [requests]
 - [pydub]
+- [wikipedia]
+- [flask]
+- [libav] or [ffmpeg]
+
+> Setup script will be prepared later
 
 ## Installation
 
@@ -106,4 +113,8 @@ Robbie is build upon [program-y] AIML project and [GNU LGPL v3.0] license is use
    [Alicebot AIML 2.0]: <https://docs.google.com/document/d/1wNT25hJRyupcG51aO89UcQEiG-HkXRXusukADpFnDs4/pub>
    [Answers.com]: <http://www.answers.com>
    [pydub]: <http://pydub.com>
-
+   [First Look]: <https://www.youtube.com/watch?v=iqWow03RaaM>
+    [wikipedia]: <https://pypi.python.org/pypi/wikipedia/>
+    [flask]: <http://flask.pocoo.org>
+    [libav]: <https://libav.org>
+    [ffmpeg]: <https://www.ffmpeg.org>

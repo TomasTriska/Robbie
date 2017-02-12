@@ -1,17 +1,17 @@
 # Robbie
 
-> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people. Robbie do command, tell you something or do another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
+> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people in front of you. Robbie do command, tells you something or does another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
 
-## Here is Amazon Echo and Google Home where are differencies compare to them?
-> So. It's simple. Amazon Echo and Google Home are closed systems with own harware and software policies. Robbie is framework. You can build own UNIX like device with own sensors and parts (for example speaker and microphone) and use Robbie's code. You can sale this devices as your product if you want. You can create own modules for devices compatibility and share this modules for free, do edits in Robbie's code or create own forks and versions. All without policies and bureaucracy.
+## There is Amazon Echo and Google Home. Where are differencies compare to them?
+> So. It's simple. Amazon Echo and Google Home are closed systems with own harware and software policies. Robbie is framework. You can build own UNIX like device with own sensors and parts (for example speaker and microphone) and use Robbie's code. You can sale this devices as your product if you want. You can create own modules for devices compatibility and share this modules, do edits in Robbie's code or create own forks and versions. All without policies and bureaucracy.
 
 ## Features
   - Open Source
   - Based on [Alicebot AIML 2.0]
-  - Robbie understand your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
+  - Robbie understands your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
   - Text to speech
-  - Running on all [UNIX] devices include [MacOS]
-  - Primary used for [Intel Edison], but can run on another device - small or big one
+  - Runs on all [UNIX] devices include [MacOS]
+  - Primary used for [Intel Edison], but can run on another devices - small or big ones
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)
   
 ## Videos
@@ -19,14 +19,15 @@
   
 ## To-do
 - Support for [Answers.com], [Wolfram Alpha], [Wikipedia] and other services
-- Using of another bots in network (Your home instance of Robbie can ask for closing of doors in your company for example. There can be closing IoT device for door closing or just another Robbie server managing this IoT device himself.)
+- Using of another bots in network (Your home instance of Robbie can ask for closing of doors in your company for example. There can be closing IoT device for door or just another Robbie based server managing this IoT device himself.)
 - Voice recognization
 - Support for sensors and devices using [Intel Edison]
 - Support for sensors and devices using protocols
-- Web Admin based on Python's Flask with configurable IP address (public IP can be set), login screen, graphs, console and online modules + wysiwig AIML editor. You can manage and program Robbie using web admin only
-- Libraries for main programming languages (one can use communicate with Robbie using mobile phone microphone and text input for example + Robbie can show informations on display and use mobile phone speaker)
-- [Python] GUI for desktop platforms using libraries and nice design
+- Web Admin based on Python's Flask with configurable IP address (public IP can be set), login screen, graphs, console and online modules + wysiwig AIML editor. You can manage and program Robbie using web admin
+- Libraries for main programming languages (One can communicate with Robbie using mobile phone microphone and text input for example. Robbie can show informations on display and use mobile phone speaker.)
+- [Python] GUI for desktop platforms based on libraries with nice design
 - User profiles with users swithching ("Hello, here is Thomas. Can you do some notes for me?", "Hi Thomas, what do you want to note?")
+- Support for localization and for multiple voice rocognization and text to speech libraries
 
 > More info about features is in GitHub's issues list.
 
@@ -78,7 +79,7 @@ or
 $ brew install ffmpeg --with-libvorbis --with-ffplay --with-theora
 ```
 
-## Running
+## Lauching
 - CD to Robbie folder in terminal 
 and then:
 
@@ -86,12 +87,12 @@ and then:
 $ sh start.sh
 ```
 
->You can set automatic lauching of this script on restart as well.
+> You can set automatic lauching of this script on restart as well.
 
 ## Stopping
 - Hit CTRL+C in terminal
 
->Do not close Robbie. He can not respond on you and can not learn when is closed. Let him live on old PC or own [Intel Edison] board for example.
+> Do not close Robbie. He can not respond on you and can not learn when is closed. Let him live on old PC or own [Intel Edison] board for example.
 
 ## Help us
 Want to help us with this amazing project? [Contact us](mailto:tomas.triska@icloud.com). We like investors as well.

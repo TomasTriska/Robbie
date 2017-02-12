@@ -81,6 +81,7 @@ $ brew install ffmpeg --with-libvorbis --with-ffplay --with-theora
 ## Running
 - CD to Robbie folder in terminal 
 and then:
+
 ```sh
 $ sh start.sh
 ```

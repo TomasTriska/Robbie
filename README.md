@@ -15,7 +15,7 @@
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)
   
 ## Videos
-[First look]
+[First Look]
   
 ## To-do
 - Support for [Answers.com], [Wolfram Alpha], [Wikipedia] and other services
@@ -114,7 +114,7 @@ Robbie is build upon [program-y] AIML project and [GNU LGPL v3.0] license is use
    [Answers.com]: <http://www.answers.com>
    [pydub]: <http://pydub.com>
    [First Look]: <https://www.youtube.com/watch?v=iqWow03RaaM>
-    [wikipedia]: <https://pypi.python.org/pypi/wikipedia/>
-    [flask]: <http://flask.pocoo.org>
-    [libav]: <https://libav.org>
-    [ffmpeg]: <https://www.ffmpeg.org>
+   [wikipedia]: <https://pypi.python.org/pypi/wikipedia/>
+   [flask]: <http://flask.pocoo.org>
+   [libav]: <https://libav.org>
+   [ffmpeg]: <https://www.ffmpeg.org>

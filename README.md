@@ -47,6 +47,7 @@
 ### Linux
 - Install [Python 3] first
 and then:
+
 ```sh
 $ sudo apt-get install python3-pip
 $ pip3 install pyaml
@@ -63,6 +64,7 @@ $ apt-get install ffmpeg libavcodec-extra-53
 ### MacOS
 - Install [Python 3] first
 and then:
+
 ```sh
 $ pip3 install pyaml
 $ pip3 install python-dateutil

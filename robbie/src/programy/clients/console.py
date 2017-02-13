@@ -19,35 +19,35 @@ class ConsoleBotClient(BotClient):
             logging.info("Entering conversation loop...")
             running = True
             self.__play(Sample('Beep'))
-            self.display_response(self.bot.get_version_string)
+            self.__send_response(self.bot.get_version_string)
             self.__play(Sample('Beep'))
-            self.display_response(self.bot.brain.post_process_response(self.bot, self.clientid, self.bot.initial_question))
+            self.__send_response(self.bot.brain.post_process_response(self.bot, self.clientid, self.bot.initial_question))
             while running is True:
                 try:
-                    question = self.get_question()
+                    question = self.__get_question()
                     self.__play(Sample('Beep'))
                     response = self.bot.ask_question(self.clientid, question)
                     if response is None:
                         self.__play(Sample('Failure'))
-                        self.display_response(self.bot.default_response)
+                        self.__send_response(self.bot.default_response)
                         self.log_unknown_response(question)
                     else:
                         self.__play(Sample('Action'))
-                        self.display_response(response)
+                        self.__send_response(response)
                         self.log_response(question, response)
                 except KeyboardInterrupt:
                     running = False
                     self.__play(Sample('Failure'))
-                    self.display_response(self.bot.exit_response)
+                    self.__send_response(self.bot.exit_response)
                 except Exception as excep:
                     logging.exception(excep)
                     logging.error("Oops something bad happened !")
 
-    def get_question(self):
+    def __get_question(self):
         ask="%s "%"You ➜"
         return input(ask)
 
-    def display_response(self, response):
+    def __send_response(self, response):
         print("R🤖bbie ➜ "+response)
         self.__play(Phrase(response))
 

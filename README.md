@@ -1,30 +1,30 @@
-# Robbie
+# R👁bbie
 
-> Robbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. Robbie needs no screens. Just type or say commands like to normal people in front of you. Robbie do command, tells you something or does another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance Robbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
+> R👁bbie is Artificial Inteligence [IoT] framework for all purposes. Is written in [Python] and uses [Alicebot AIML 2.0]. R👁bbie needs no screens. Just type or say commands like to normal people in front of you. R👁bbie do command, tells you something or does another action depending on his installed modules for sensors and devices. Developers can write own modules and enhance R👁bbie. Possibilities are endless. From home assistant (primary use), car assistants, airplanes assistants, interactive robots to clever space ships like in Star Trek in future :)
 
 ## There is Amazon Echo and Google Home. Where are differencies compare to them?
-> So. It's simple. Amazon Echo and Google Home are closed systems with own harware and software policies. Robbie is framework. You can build own UNIX like device with own sensors and parts (for example speaker and microphone) and use Robbie's code. You can sale this devices as your product if you want. You can create own modules for devices compatibility and share this modules, do edits in Robbie's code or create own forks and versions. All without policies and bureaucracy.
+> So. It's simple. Amazon Echo and Google Home are closed systems with own harware and software policies. R👁bbie is framework. You can build own UNIX like device with own sensors and parts (for example speaker and microphone) and use R👁bbie's code. You can sale this devices as your product if you want. You can create own modules for devices compatibility and share this modules, do edits in R👁bbie's code or create own forks and versions. All without policies and bureaucracy.
 
 ## Features
   - Open Source
   - Based on [Alicebot AIML 2.0]
-  - Robbie understands your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
+  - R👁bbie understands your sentences and reacts (Just tell him "Prepare some coffee for me", or "How many people live on Earth"...)
   - Text to speech
   - Runs on all [UNIX] devices include [MacOS]
   - Primary used for [Intel Edison], but can run on another devices - small or big ones
-  - Prepared for [IoT] manufacturers (just connect your sensors and devices using Robbie's methods)
+  - Prepared for [IoT] manufacturers (just connect your sensors and devices using R👁bbie's methods)
   
 ## Videos
 [First Look]
   
 ## To-do
 - Support for [Answers.com], [Wolfram Alpha], [Wikipedia] and other services
-- Using of another bots in network (Your home instance of Robbie can ask for closing of doors in your company for example. There can be closing IoT device for door or just another Robbie based server managing this IoT device himself.)
+- Using of another bots in network (Your home instance of R👁bbie can ask for closing of doors in your company for example. There can be closing IoT device for door or just another R👁bbie based server managing this IoT device himself.)
 - Voice recognization
 - Support for sensors and devices using [Intel Edison]
 - Support for sensors and devices using protocols
-- Web Admin based on Python's Flask with configurable IP address (public IP can be set), login screen, graphs, console and online modules + wysiwig AIML editor. You can manage and program Robbie using web admin
-- Libraries for main programming languages (One can communicate with Robbie using mobile phone microphone and text input for example. Robbie can show informations on display and use mobile phone speaker.)
+- Web Admin based on Python's Flask with configurable IP address (public IP can be set), login screen, graphs, console and online modules + wysiwig AIML editor. You can manage and program R👁bbie using web admin
+- Libraries for main programming languages (One can communicate with R👁bbie using mobile phone microphone and text input for example. R👁bbie can show informations on display and use mobile phone speaker.)
 - [Python] GUI for desktop platforms based on libraries with nice design
 - User profiles with users swithching ("Hello, here is Thomas. Can you do some notes for me?", "Hi Thomas, what do you want to note?")
 - Support for localization and for multiple voice rocognization and text to speech libraries
@@ -80,7 +80,7 @@ $ brew install ffmpeg --with-libvorbis --with-ffplay --with-theora
 ```
 
 ## Lauching
-- CD to Robbie folder in terminal 
+- CD to R👁bbie folder in terminal 
 and then:
 
 ```sh
@@ -92,13 +92,13 @@ $ sh start.sh
 ## Stopping
 - Hit CTRL+C in terminal
 
-> Do not close Robbie. He can not respond on you and can not learn when is closed. Let him live on old PC or own [Intel Edison] board for example.
+> Do not close R👁bbie. He can not respond on you and can not learn when is closed. Let him live on old PC or own [Intel Edison] board for example.
 
 ## Help us
 Want to help us with this amazing project? [Contact us](mailto:tomas.triska@icloud.com). We like investors as well.
 
 ## License
-Robbie is build upon [program-y] AIML project and [GNU LGPL v3.0] license is used.
+R👁bbie is build upon [program-y] AIML project and [GNU LGPL v3.0] license is used.
 
    [Internet of Things]: <https://en.wikipedia.org/wiki/Internet_of_things>
    [IoT]: <https://en.wikipedia.org/wiki/Internet_of_things>

@@ -18,26 +18,26 @@ class ConsoleBotClient(BotClient):
         if self.arguments.noloop is False:
             logging.info("Entering conversation loop...")
             running = True
-            self.sound.send(Sample('Beep'))
+            self.__play(Sample('Beep'))
             self.display_response(self.bot.get_version_string)
-            self.sound.send(Sample('Beep'))
+            self.__play(Sample('Beep'))
             self.display_response(self.bot.brain.post_process_response(self.bot, self.clientid, self.bot.initial_question))
             while running is True:
                 try:
                     question = self.get_question()
-                    self.sound.send(Sample('Beep'))
+                    self.__play(Sample('Beep'))
                     response = self.bot.ask_question(self.clientid, question)
                     if response is None:
-                        self.sound.send(Sample('Failure'))
+                        self.__play(Sample('Failure'))
                         self.display_response(self.bot.default_response)
                         self.log_unknown_response(question)
                     else:
-                        self.sound.send(Sample('Action'))
+                        self.__play(Sample('Action'))
                         self.display_response(response)
                         self.log_response(question, response)
                 except KeyboardInterrupt:
                     running = False
-                    self.sound.send(Sample('Failure'))
+                    self.__play(Sample('Failure'))
                     self.display_response(self.bot.exit_response)
                 except Exception as excep:
                     logging.exception(excep)
@@ -49,7 +49,13 @@ class ConsoleBotClient(BotClient):
 
     def display_response(self, response):
         print("R🤖bbie ➜ "+response)
-        self.sound.send(Phrase(response))
+        self.__play(Phrase(response))
+
+    def __play(self, what):
+        if not self.arguments.mute:
+            self.sound.send(what)
+
+
 
 if __name__ == '__main__':
 

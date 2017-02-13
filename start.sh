@@ -13,5 +13,5 @@ printf "Lauching Web Admin...\n"
 python3 robbie/src/programy/clients/web_admin/web_admin.py &
 
 printf "Lauching Robbie...\n"
-python3 robbie/src/programy/clients/console.py --config robbie/bots/robbie/config.yaml --cformat yaml --logging robbie/bots/robbie/logging.yaml --debug
+python3 robbie/src/programy/clients/console.py --config robbie/bots/robbie/config.yaml --cformat yaml --logging robbie/bots/robbie/logging.yaml --debug --mute
 

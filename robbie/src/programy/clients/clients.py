@@ -39,6 +39,7 @@ class ClientArguments(object):
         self.parser.add_argument('--logging', dest='logging', help='logging configuration file')
         self.parser.add_argument('--debug', dest='debug', action='store_true', help='run in debug mode')
         self.parser.add_argument('--noloop', dest='noloop', action='store_true', help='do not enter conversation loop')
+        self.parser.add_argument('--mute', dest='mute', action='store_true', help='Mute of sound-system.')
         client.add_client_arguments(self.parser)
 
     def parse_args(self):
@@ -71,6 +72,10 @@ class ClientArguments(object):
     @property
     def noloop(self):
         return self.args.noloop
+
+    @property
+    def mute(self):
+        return self.args.mute
 
 
 class BotClient(object):

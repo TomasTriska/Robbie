@@ -2,7 +2,7 @@ import logging
 import time
 
 from programy.clients.clients import BotClient
-from programy.clients.sounds import SoundSystem, Sample, Phrase
+from programy.clients.helpers.sounds import SoundSystem, Sample, Phrase
 
 class ConsoleBotClient(BotClient):
 

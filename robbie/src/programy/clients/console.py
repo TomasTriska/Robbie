@@ -18,9 +18,8 @@ class ConsoleBotClient(BotClient):
         if self.arguments.noloop is False:
             logging.info("Entering conversation loop...")
             running = True
-            self.__play(Sample('Beep'))
-            self.__send_response(self.bot.get_version_string)
-            self.__play(Sample('Beep'))
+            self.__play(Sample('StartUp'))
+            time.sleep(1)
             self.__send_response(self.bot.brain.post_process_response(self.bot, self.clientid, self.bot.initial_question))
             while running is True:
                 try:
@@ -39,6 +38,8 @@ class ConsoleBotClient(BotClient):
                     running = False
                     self.__play(Sample('Failure'))
                     self.__send_response(self.bot.exit_response)
+                    time.sleep(1)
+                    self.__play(Sample('TurnOff'))
                 except Exception as excep:
                     logging.exception(excep)
                     logging.error("Oops something bad happened !")

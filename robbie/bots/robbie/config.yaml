@@ -1,7 +1,7 @@
 
 brain:
 
-    supress_warnings: false
+    supress_warnings: true
 
     allow_system_aiml: true
     allow_learn_aiml: true
@@ -40,9 +40,9 @@ brain:
 
 bot:
     prompt: ">>>"
-    initial_question: Hi, how can I help you today?
+    initial_question: "Hello. I'm awake again."
     default_response: Sorry, I don't have an answer for that!
-    exit_response: "It's not recommend to close Robbie. He can't serve you and learn himself. Consider starting it again."
+    exit_response: "It's not recommend to closing me. I can't serve you and can't learn myself. Consider starting me again."
 
 rest:
   host: 127.0.0.1

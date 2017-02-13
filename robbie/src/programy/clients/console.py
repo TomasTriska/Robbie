@@ -49,7 +49,7 @@ class ConsoleBotClient(BotClient):
         return input(ask)
 
     def __send_response(self, response):
-        print("R🤖bbie ➜ "+response)
+        print("R👁bbie ➜ "+response)
         self.__play(Phrase(response))
 
     def __play(self, what):

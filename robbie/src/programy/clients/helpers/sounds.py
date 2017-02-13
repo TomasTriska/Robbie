@@ -36,7 +36,7 @@ class SoundSystem(object):
 
 
 class Sample(object):
-	"Represents some existing and named record."
+	"Represents some existing and named records."
 
 	def __init__(self, name):
 		self.name = name

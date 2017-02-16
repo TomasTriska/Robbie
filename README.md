@@ -15,6 +15,8 @@
   - Prepared for [IoT] manufacturers (just connect your sensors and devices using R👁bbie™'s methods)
   
 ## Videos
+[First Web Admin Draft]
+[Internal Web Server & Sound System Update]
 [First Look]
   
 ## To-do
@@ -118,6 +120,8 @@ R👁bbie™ is build upon [program-y] AIML project and [GNU LGPL v3.0] license 
    [Answers.com]: <http://www.answers.com>
    [pydub]: <http://pydub.com>
    [First Look]: <https://www.youtube.com/watch?v=iqWow03RaaM>
+   [Internal Web Server & Sound System Update]: <https://youtu.be/XBhazcJ5kt0?list=PLun91G2kmw4Iz1OfOiSqeMcmwT8wsoAKB>
+   [First Web Admin Draft]: <https://youtu.be/-Oe_milmMjY?list=PLun91G2kmw4Iz1OfOiSqeMcmwT8wsoAKB>
    [wikipedia]: <https://pypi.python.org/pypi/wikipedia/>
    [flask]: <http://flask.pocoo.org>
    [libav]: <https://libav.org>

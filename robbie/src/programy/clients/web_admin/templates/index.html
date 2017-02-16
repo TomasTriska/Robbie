@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Robbie's Web Admin</title>
+  <title>R👁bbie™'s Web Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -60,9 +60,9 @@ desired effect
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini">👁</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>R👁bbie</b>™</span>
     </a>
 
     <!-- Header Navbar -->
@@ -78,34 +78,142 @@ desired effect
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <i class="fa fa-comments-o"></i>
+              <span class="label label-info">1</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">1 queued response</li>
               <li>
                 <!-- inner menu: contains the messages -->
                 <ul class="menu">
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/img/robbie.jpg') }}" class="img-circle" alt="R👁bbie™">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Temperature
+                        <small><i class="fa fa-clock-o"></i> Queued (Low)</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Hello Tomáš, temp is low. May I increase it?</p>
+                    </a>
+                  </li>
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/plugins/test-coffee-maker/logo.jpg') }}" class="img-circle" alt="Acme Inc. Coffee Maker">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Make some coffee.
+                        <small><i class="fa fa-clock-o"></i> Now</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Acme Inc. Coffee Maker turned on.</p>
+                    </a>
+                  </li>
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/img/robbie.jpg') }}" class="img-circle" alt="R👁bbie™">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Starting
+                        <small><i class="fa fa-clock-o"></i> 1 minute ago</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Hello. i'm awake again.</p>
+                    </a>
+                  </li>
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/img/robbie.jpg') }}" class="img-circle" alt="R👁bbie™">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Closing
+                        <small><i class="fa fa-clock-o"></i> 1 week ago</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>It's not recommend to closing me...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/plugins/wikipedia/logo.png') }}" class="img-circle" alt="Wikipedia">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Who is Nikola Tesla?
+                        <small><i class="fa fa-clock-o"></i> 1 week ago</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Nikola Tesla (Serbian Cyrillic: Никола...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/plugins/wikipedia/logo.png') }}" class="img-circle" alt="Wikipedia">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        I am fine. Who is Tesla?
+                        <small><i class="fa fa-clock-o"></i> 1 week ago</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Glad to hear it. what's new with you?...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                    <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="{{ url_for('static', filename='dist/img/robbie.jpg') }}" class="img-circle" alt="R👁bbie™">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Hello Robbie. How are...
+                        <small><i class="fa fa-clock-o"></i> 1 week ago</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Hi! It's delightful to se you.. I'm fine, how...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="{{ url_for('static', filename='dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                        <img src="{{ url_for('static', filename='dist/img/robbie.jpg') }}" class="img-circle" alt="R👁bbie™">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        Greeting
+                        <small><i class="fa fa-clock-o"></i> 1 week ago</small>
                       </h4>
                       <!-- The message -->
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Hi, how can i help you today?</p>
                     </a>
                   </li>
-                  <!-- end message -->
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
+              <li class="footer"><a href="#">See All Responses</a></li>
             </ul>
           </li>
           <!-- /.messages-menu -->
@@ -115,16 +223,22 @@ desired effect
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning">2</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">2 queued tasks</li>
               <li>
                 <!-- Inner Menu: contains the notifications -->
                 <ul class="menu">
+                    <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-bell-o"></i> Wake me at 5:05 AM tomorrow
+                    </a>
+                  </li>
+                  <!-- end notification -->
                   <li><!-- start notification -->
                     <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <i class="fa fa-coffee"></i> Make coffee at 5 AM every working day
                     </a>
                   </li>
                   <!-- end notification -->
@@ -137,26 +251,60 @@ desired effect
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <i class="fa fa-tasks"></i>
+              <span class="label label-danger">3</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
+              <li class="header">3 actual running tasks</li>
               <li>
                 <!-- Inner menu: contains the tasks -->
                 <ul class="menu">
-                  <li><!-- Task item -->
+                    <li><!-- Task item -->
                     <a href="#">
                       <!-- Task title and progress text -->
                       <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
+                        Make some coffee
+                        <small class="pull-right">13% (Running - 7 minutes left)</small>
                       </h3>
                       <!-- The progress bar -->
                       <div class="progress xs">
                         <!-- Change the css width attribute to simulate progress -->
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
+                        <div class="progress-bar progress-bar-aqua" style="width: 13%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">13% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                    <li><!-- Task item -->
+                    <a href="#">
+                      <!-- Task title and progress text -->
+                      <h3>
+                        Wake me at 5:05 AM tomorrow
+                        <small class="pull-right">50% (11 hours and 51 minutes to start)</small>
+                      </h3>
+                      <!-- The progress bar -->
+                      <div class="progress xs">
+                        <!-- Change the css width attribute to simulate progress -->
+                        <div class="progress-bar progress-bar-aqua" style="width: 49%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">49% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <!-- Task title and progress text -->
+                      <h3>
+                        Make coffee at 5 AM every working day
+                        <small class="pull-right">49% (11 hours and 46 minutes to start)</small>
+                      </h3>
+                      <!-- The progress bar -->
+                      <div class="progress xs">
+                        <!-- Change the css width attribute to simulate progress -->
+                        <div class="progress-bar progress-bar-aqua" style="width: 49%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">49% Complete</span>
                         </div>
                       </div>
                     </a>
@@ -174,31 +322,31 @@ desired effect
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="{{ url_for('static', filename='dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
+              <img src="{{ url_for('static', filename='dist/users/profile-photos/1.jpg') }}" class="user-image" alt="Tomáš Tříska">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Tomáš Tříska</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="{{ url_for('static', filename='dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                <img src="{{ url_for('static', filename='dist/users/profile-photos/1.jpg') }}" class="img-circle" alt="Tomáš Tříska">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  Tomáš Tříska - Botmaster
+                  <small>Known since Feb. 2017</small>
                 </p>
               </li>
               <!-- Menu Body -->
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+                    <a href="#"><i class="fa fa-user"></i> My settings</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
+                    <a href="#"><i class="fa fa-eye"></i> AI settings</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a href="#"><i class="fa fa-gears"></i> System settings</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -231,21 +379,21 @@ desired effect
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{ url_for('static', filename='dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+          <img src="{{ url_for('static', filename='dist/users/profile-photos/1.jpg') }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Tomáš Tříska</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-eye"></i> Botmaster</a>
         </div>
       </div>
 
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Quick communication...">
               <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-commenting-o"></i>
                 </button>
               </span>
         </div>
@@ -254,19 +402,56 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
-        <li class="header">HEADER</li>
+        <li class="header">R👁bbie™</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-pie-chart"></i> <span>Informations</span></a></li>
+        <li><a href="#"><i class="fa fa-desktop"></i> <span>Interactive Console</span></a></li>
+        <li><a href="#"><i class="fa fa-tags"></i> <span>AIML Editor</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href="#"><i class="fa fa-plug"></i> <span>Plugins</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Install</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Remove</a></li>
+            <li><a href="#">Create</a></li>
+          </ul>
+        </li>
+        <li class="header">Plugins</li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-coffee"></i> <span>Acme Inc. Coffee Maker</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-music"></i> <span>Sound System</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-wikipedia-w"></i> <span>Wikipedia</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Settings</a></li>
           </ul>
         </li>
       </ul>
@@ -280,12 +465,12 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        Informations
+        <small>All important informations about system & R👁bbie™</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="#"><i class="fa fa-pie-eye"></i> R👁bbie™</a></li>
+        <li class="active">Informations</li>
       </ol>
     </section>
 
@@ -303,10 +488,10 @@ desired effect
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Anything you want
+      Version 0.2.0.0
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>&copy; 2017 <a href="www.naprogramuji.cz">Tomáš Tříska</a>.</strong> Licensed under <a target="_blank" href="https://www.gnu.org/licenses/lgpl-3.0.en.html">GNU Lesser General Public License v3.0</a>.
   </footer>
 
   <!-- Control Sidebar -->

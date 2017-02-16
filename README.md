@@ -16,7 +16,9 @@
   
 ## Videos
 [First Web Admin Draft]
+
 [Internal Web Server and Sound System Update]
+
 [First Look]
   
 ## To-do

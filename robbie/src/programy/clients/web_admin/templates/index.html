@@ -30,6 +30,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='dist/css/terminal.css') }}">
+  <link rel="chrome-application-definition" href="manifest.json">
+  
+  <!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="{{ url_for('static', filename='plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ url_for('static', filename='dist/js/app.min.js') }}"></script>
+  
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -223,7 +236,7 @@ desired effect
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">2</span>
+              <span class="label label-success">2</span>
             </a>
             <ul class="dropdown-menu">
               <li class="header">2 queued tasks</li>
@@ -252,7 +265,7 @@ desired effect
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-tasks"></i>
-              <span class="label label-danger">3</span>
+              <span class="label label-success">3</span>
             </a>
             <ul class="dropdown-menu">
               <li class="header">3 actual running tasks</li>
@@ -473,14 +486,101 @@ desired effect
         <li class="active">Informations</li>
       </ol>
     </section>
-
+    
+    <aside class="help hidden">
+  <section>
+    <div>
+      <span onclick="toggleHelp()" id="close">x</span>
+      <h2>Keyboard shortcuts</h2>
+      <div class="shortcuts">
+        <p><strong>&lt;ctrl&gt; + s</strong> : Toggle CRT monitor flicker effect</p>
+        <p><strong>&lt;esc&gt;</strong> : toggle this help menu</p>
+      </div>
+    </div>
+    <div>
+      <h2>What is this?</h2>
+      <p>A Command-line terminal/shell running on top of HTML5 APIs.</p>
+      <p>By: Eric Bidelman &lt;ericbidelman@chromium.org&gt;</p>
+    </div>
+  </section>
+</aside>
+    
     <!-- Main content -->
-    <section class="content">
+    <section class="content terminal">
+    
+    <!--<div class="crt top"></div>-->
+    
+    <div class="interlace"></div>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+    $(function() {
+  $(".interlace").width($(".terminal").width()).height($(".terminal").height());
+});
+}
+    </script>
+    
+    <div id="container" class="flicker"><terminal_output></terminal_output></div>
+    
+    <!--<div class="crt bottom"></div>-->
+    
+    <script src="{{ url_for('static', filename='dist/js/terminal.js') }}"></script>
+    
+    <script>
+function toggleHelp() {
+  document.querySelector('.help').classList.toggle('hidden');
+  document.body.classList.toggle('dim');
+}
 
-      <!-- Your Page Content Here -->
+(function() {
+  var term = new Terminal('container');
+  term.initFS(false, 1024 * 1024);
 
-    </section>
+  if (document.location.hash) {
+    var theme = document.location.hash.substring(1).split('=')[1];
+    term.setTheme(theme);
+  } else if (localStorage.theme) {
+    term.setTheme(localStorage.theme);
+  }
+
+  document.body.addEventListener('keydown', function(e) {
+    if (e.keyCode == 27) { // Esc
+      toggleHelp();
+      e.stopPropagation();
+      e.preventDefault();
+    }
+  }, false);
+
+  // Setup the DnD listeners for file drop.
+  document.body.addEventListener('dragenter', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.classList.add('dropping');
+  }, false);
+
+  document.body.addEventListener('dragover', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+  }, false);
+
+  document.body.addEventListener('dragleave', function(e) {
+   this.classList.remove('dropping');
+  }, false);
+  
+  document.body.addEventListener('drop', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.classList.remove('dropping');
+    term.addDroppedFiles(e.dataTransfer.files);
+    term.terminal_output('<div>File(s) added!</div>');
+  }, false);
+})();
+</script>
+
+</section>
     <!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
 
@@ -488,7 +588,7 @@ desired effect
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Version 0.2.0.0
+      Version 0.4.0.0
     </div>
     <!-- Default to the left -->
     <strong>&copy; 2017 <a href="www.naprogramuji.cz">Tomáš Tříska</a>.</strong> Licensed under <a target="_blank" href="https://www.gnu.org/licenses/lgpl-3.0.en.html">GNU Lesser General Public License v3.0</a>.
@@ -572,15 +672,6 @@ desired effect
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-
-<!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 2.2.3 -->
-<script src="{{ url_for('static', filename='plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ url_for('static', filename='dist/js/app.min.js') }}"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
